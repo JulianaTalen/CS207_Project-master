@@ -31,7 +31,7 @@ Libraries
 // Available on the library manager (ArduinoJson)
 // https://github.com/bblanchon/ArduinoJson
 
-#include <DoubleResetDetector.h>
+#include <DoubleResetDetector.h> 
 // For entering Config mode by pressing reset twice
 // Not yet available on the library manager
 // Go to the github page and there is a download button
