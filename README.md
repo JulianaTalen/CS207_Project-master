@@ -9,6 +9,70 @@ Important notes
 - any code that you may want to change for projects later in the future is located at the top of the code
 - this project takes place in New York City 
 
+Libraries
+
+#include <ESP8266WiFi.h>
+#include <WiFiClientSecure.h>
+#include <WiFiUdp.h>
+#include "FS.h"
+
+#include <WiFiManager.h>
+// For configuring the Wifi credentials without re-programing 
+// Availalbe on library manager (WiFiManager)
+// https://github.com/tzapu/WiFiManager
+
+#include <GoogleMapsApi.h>
+// For accessing Google Maps Api
+// Availalbe on library manager (GoogleMapsApi)
+// https://github.com/witnessmenow/arduino-google-maps-api
+
+#include <ArduinoJson.h>
+// For parsing the response from google maps and for the config file
+// Available on the library manager (ArduinoJson)
+// https://github.com/bblanchon/ArduinoJson
+
+#include <DoubleResetDetector.h>
+// For entering Config mode by pressing reset twice
+// Not yet available on the library manager
+// Go to the github page and there is a download button
+// Click Download as zip, and add to Arduino IDE(Sketch->Include Library-> Add .zip library)
+// https://github.com/datacute/DoubleResetDetector
+
+#include <Adafruit_NeoPixel.h>
+// For controlling the Addressable LEDs
+// Available on the library manager (Adafruit Neopixel)
+// https://github.com/adafruit/Adafruit_NeoPixel
+
+#include <NTPClient.h>
+// For keeping the time, incase we want to do anything based on time
+// Available on the library manager (NTPClient)
+// https://github.com/arduino-libraries/NTPClient
+
+
+Materials
+
+-Adafruit Feather HUZZAH with ESP8266
+-Adafruit NeoPixel Through-hole LEDs
+-Breadboard
+-Capacitor, 220uf 
+-Resistor, 330 ohm
+-Map/drawing 
+-Computer 
+-Internet access 
+-wires
+
+Build Instructions
+
+1. Collect all materials needed for the project
+2. Construct the project using that materials listed above
+3. Download the code and make any changes as needed
+4. Upload the code to your Arduino
+5. Watch the neopixels change colour based on the traffic conditions 
+
+How the Project Works 
+
+The project works by using neopixel LEDs, Google API, and Adafruit Feather HUZZAH with ESP8266. These three items allow the project to display the different live traffic pattern by displaying different coloured LEDs. The neopixels allow the different colours on the LEDs to be displayed on the map. Google API is important because it allows the Adafruit Feather to access live traffic data being presented on Google Maps. Google API also collects the traffic conditions needed for the project. Finally the Adafruit Feather HUZZAH has a Wi-Fi component built into it. This allows for the Arduino to keep up to date on the latest traffic conditions from Google. 
+
 
 
 
