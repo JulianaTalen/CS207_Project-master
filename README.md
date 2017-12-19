@@ -8,6 +8,7 @@ Important notes
 - download all of the libraries listed at the top of the code before beginning
 - any code that you may want to change for projects later in the future is located at the top of the code
 - this project takes place in New York City 
+- I used the Arduino IDE 1.8.4 for this project
 
 Libraries
 
